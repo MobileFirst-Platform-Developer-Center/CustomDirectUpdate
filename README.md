@@ -1,13 +1,13 @@
 IBM MobileFirst Platform Foundation
 ===
-### Sample Name
+### Custom Direct Update
 
 
 ### Usage
-Follow the instructions in the tutorials listed below.
+Follow the instructions in the tutorial(s) listed below.
 
 ### Tutorials
-
+https://developer.ibm.com/mobilefirstplatform/documentation/getting-started-7-1/foundation/advanced-client-side-development/using-direct-update-to-quickly-update-your-application/
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 7.1

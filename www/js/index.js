@@ -31,7 +31,17 @@ var wlInitOptions = {
 
 // Called automatically after MFP framework initialization by WL.Client.init(wlInitOptions).
 function wlCommonInit(){
-    WL.client.checkForDirectUpdate();
+	// Used to trigger a request to the MobileFirst Server for the sake of force-checking for an update.
+	// In real applications this will not be needed.
+	WLAuthorizationManager.obtainAuthorizationHeader(scope)
+  	.then (
+    	function(token) {
+      		console.log(token);
+    	},
+    	function(error) {
+      	console.log(error);
+    	}
+  	);  
 }
 
 wl_directUpdateChallengeHandler.handleDirectUpdate = function(directUpdateData, directUpdateContext) {

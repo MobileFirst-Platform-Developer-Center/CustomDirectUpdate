@@ -14,16 +14,6 @@
 * limitations under the License.
 */
 
-var Messages = {
-	headerText: "Default header",
-	actionsLabel: "Default action label",
-	sampleText: "Default sample text",
-	englishLanguage : "English",
-	frenchLanguage : "French",
-	russianLanguage : "Russian",
-	hebrewLanguage : "Hebrew"
-};
-
 var wlInitOptions = {
     // Options to initialize with the WL.Client object.
     // For initialization options please refer to IBM MobileFirst Platform Foundation Knowledge Center.
@@ -33,13 +23,13 @@ var wlInitOptions = {
 function wlCommonInit(){
 	// Used to trigger a request to the MobileFirst Server for the sake of force-checking for an update.
 	// In real applications this will not be needed.
-	WLAuthorizationManager.obtainAuthorizationHeader(scope)
+	WLAuthorizationManager.obtainAuthorizationHeader()
   	.then (
-    	function(token) {
-      		console.log(token);
+    	function() {
+      		console.log("*** Obtained token successfully.");
     	},
     	function(error) {
-      	console.log(error);
+      	console.log("*** Failed obtaining token.");
     	}
   	);  
 }

@@ -123,7 +123,7 @@
     </mfp:windows>
     <mfp:platformVersion>8.0.0.00-20160114-1446</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
-    <mfp:server runtime="mfp" url="http://9.148.225.92:9080" />
+    <mfp:server runtime="mfp" url="http://localhost:9080" />
     <mfp:directUpdateAuthenticityPublicKey />
     <mfp:languagePreferences>en</mfp:languagePreferences>
 </widget>

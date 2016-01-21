@@ -76,7 +76,6 @@
         <mfp:sdkChecksum>3792344277</mfp:sdkChecksum>
         <mfp:appChecksum>554523671</mfp:appChecksum>
         <mfp:security>
-            <mfp:encryptWebResources enabled="false" />
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
         </mfp:security>
         <mfp:publicSigningKey />
@@ -85,7 +84,6 @@
         <mfp:sdkChecksum>0</mfp:sdkChecksum>
         <mfp:appChecksum>0</mfp:appChecksum>
         <mfp:security>
-            <mfp:encryptWebResources enabled="false" />
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
         </mfp:security>
     </mfp:ios>
@@ -93,7 +91,6 @@
         <mfp:sdkChecksum>0</mfp:sdkChecksum>
         <mfp:appChecksum>0</mfp:appChecksum>
         <mfp:security>
-            <mfp:encryptWebResources enabled="false" />
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
         </mfp:security>
         <mfp:windows8>

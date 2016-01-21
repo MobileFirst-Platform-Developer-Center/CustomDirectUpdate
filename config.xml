@@ -73,8 +73,8 @@
         <splash height="1242" src="res/screen/ios/Default-736h-Landscape~iphone.png" width="2208" />
     </platform>
     <mfp:android>
-        <mfp:sdkChecksum>1827518913</mfp:sdkChecksum>
-        <mfp:appChecksum>0</mfp:appChecksum>
+        <mfp:sdkChecksum>3792344277</mfp:sdkChecksum>
+        <mfp:appChecksum>554523671</mfp:appChecksum>
         <mfp:security>
             <mfp:encryptWebResources enabled="false" />
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
@@ -121,7 +121,7 @@
             <mfp:packageFamilyName />
         </mfp:windows10>
     </mfp:windows>
-    <mfp:platformVersion>8.0.0.00-20160114-1446</mfp:platformVersion>
+    <mfp:platformVersion>8.0.0.00-20160121-0855</mfp:platformVersion>
     <mfp:clientCustomInit enabled="false" />
     <mfp:server runtime="mfp" url="http://localhost:9080" />
     <mfp:directUpdateAuthenticityPublicKey />

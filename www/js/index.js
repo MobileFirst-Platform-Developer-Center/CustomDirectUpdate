@@ -22,6 +22,7 @@ var wlInitOptions = {
 // Called automatically after MFP framework initialization by WL.Client.init(wlInitOptions).
 function wlCommonInit(){
 	// Used to trigger a request to the MobileFirst Server for the sake of force-checking for an update.
+	
 	WLAuthorizationManager.obtainAccessToken()
   	.then (
     	function() {

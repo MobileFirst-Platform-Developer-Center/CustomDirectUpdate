@@ -21,8 +21,18 @@ var wlInitOptions = {
 
 // Called automatically after MFP framework initialization by WL.Client.init(wlInitOptions).
 function wlCommonInit(){
-	// Used to trigger a request to the MobileFirst Server for the sake of force-checking for an update.
-	
+	// Override the default Direct Update interface
+	wl_directUpdateChallengeHandler.handleDirectUpdate = function(directUpdateData, directUpdateContext) {
+		// Create a dialog
+		navigator.notification.confirm(
+		    'Custom Message Text', 
+		     onClick,
+		    'Custom Title Text',
+		    ['Update','Cancel']
+		);
+	};
+
+	// Used to trigger a request to the MobileFirst Server, to check for an updated web resources.	
 	WLAuthorizationManager.obtainAccessToken()
   	.then (
     	function() {
@@ -34,23 +44,7 @@ function wlCommonInit(){
   	);  
 }
 
-wl_directUpdateChallengeHandler.handleDirectUpdate = function(directUpdateData, directUpdateContext) {
-	// custom text for the dialog
-	var customDialogTitle = 'Custom Title Text';
-	var customDialogMessage = 'Custom Message Text';
-	var customButtonText1 = 'Update Application';
-	var customButtonText2 = 'Not Now';
-
-	// Create dialog
-	navigator.notification.confirm(
-	    'Custom Message Text', 
-	     onClick,
-	    'Custom Title Text',
-	    ['Update','Cancel']
-	);
-};
-
-// Handle dialog buttons
+// Handle custom Direct Update dialog buttons
 function onClick(buttonIndex) {
 	if (buttonIndex == 1) {
 		directUpdateContext.start();

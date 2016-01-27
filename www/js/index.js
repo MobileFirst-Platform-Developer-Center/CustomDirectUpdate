@@ -45,7 +45,7 @@ function wlCommonInit(){
     	function() {
       		console.log("*** Obtained token successfully.");
     	},
-    	function(error) {
+    	function() {
       		console.log("*** Failed obtaining token.");
     	}
   	);  

@@ -50,29 +50,3 @@ function wlCommonInit(){
     	}
   	);  
 }
-
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
-    },
-
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, 'app.receivedEvent(...);' must be explicitly called.
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-	
-	// Update the DOM on a received event.
-	receivedEvent: function(id) {
-        var parentElement = document.getElementById(id);
-	}
-};
-
-app.initialize();

@@ -1,6 +1,7 @@
 IBM MobileFirst Platform Foundation
 ===
 ## CustomDirectUpdate
+An application that demonstrates how to creat a custom Direct Update dialog instead of the default-provided dialog.
 
 ### Tutorials
 https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/direct-update/

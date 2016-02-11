@@ -77,7 +77,7 @@
         <mfp:appChecksum>2477926370</mfp:appChecksum>
         <mfp:security>
             <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
-        </mfp:security>        
+        </mfp:security>
     </mfp:android>
     <mfp:ios>
         <mfp:sdkChecksum>0</mfp:sdkChecksum>
@@ -104,14 +104,14 @@
             <mfp:security>
                 <mfp:encryptWebResources enabled="false" />
                 <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
-            </mfp:security>           
+            </mfp:security>
         </mfp:windowsphone8>
         <mfp:windows10>
             <mfp:sdkChecksum>0</mfp:sdkChecksum>
             <mfp:security>
                 <mfp:encryptWebResources enabled="false" />
                 <mfp:testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3" />
-            </mfp:security>           
+            </mfp:security>
         </mfp:windows10>
     </mfp:windows>
     <mfp:platformVersion>8.0.0.00-20160210-1338</mfp:platformVersion>

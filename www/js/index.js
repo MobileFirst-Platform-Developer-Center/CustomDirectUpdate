@@ -41,7 +41,7 @@ function wlCommonInit(){
 				}
 			},
 		    'Custom dialog title text',
-		    ['Cancel','Update']
+		    ['Update']
 		);
 	};
 

@@ -34,7 +34,7 @@ function wlCommonInit(){
 		    'Custom dialog body text', 
 			// Handle dialog buttons.
 			function(buttonIndex) {
-				if (buttonIndex == 2) {
+				if (buttonIndex == 1) {
 					directUpdateContext.start();
 				} else {
 					wl_directUpdateChallengeHandler.submitFailure();
